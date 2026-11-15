@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"nodelay\startup_stm32f103xb.o"
+"nodelay\main.o"
+"nodelay\stm32f1xx_it.o"
+"nodelay\stm32f1xx_hal_msp.o"
+"nodelay\stm32f1xx_hal_gpio_ex.o"
+"nodelay\stm32f1xx_hal.o"
+"nodelay\stm32f1xx_hal_rcc.o"
+"nodelay\stm32f1xx_hal_rcc_ex.o"
+"nodelay\stm32f1xx_hal_gpio.o"
+"nodelay\stm32f1xx_hal_dma.o"
+"nodelay\stm32f1xx_hal_cortex.o"
+"nodelay\stm32f1xx_hal_pwr.o"
+"nodelay\stm32f1xx_hal_flash.o"
+"nodelay\stm32f1xx_hal_flash_ex.o"
+"nodelay\stm32f1xx_hal_exti.o"
+"nodelay\system_stm32f1xx.o"
+--strict --scatter "nodelay\nodelay.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "nodelay.map" -o nodelay\nodelay.axf
