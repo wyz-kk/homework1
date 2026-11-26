@@ -1,4 +1,2 @@
-1.delay文件夹是用haldelay进行闪灯
-2.TIM文件夹是不使用haldelay的闪灯（使用定时器中断）
-3.button文件夹是EXTI中断和按键消抖
-4.button_pro文件夹是无阻塞的EXTI中断按键消抖
+main中是第一次作业
+homework2分支里是第二次作业
